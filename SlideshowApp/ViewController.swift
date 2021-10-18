@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         let imageViewController:ImageViewController = segue.destination as! ImageViewController
         if (segue.identifier == "imageViewControl") {
             imageViewController.index = imageArray[nowIndex]
+            scrollBtn.setTitle("再生", for: .normal)
+            timer.invalidate()
+            timer = nil
+            backBtn.isEnabled = true
+            nextBtn.isEnabled = true
         }
     }
 
@@ -46,11 +51,21 @@ class ViewController: UIViewController {
     }
     @IBAction func autoSlide(_ sender: Any) {
         if(timer == nil) {
-            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil,  repeats: true)
+            scrollBtn.setTitle("停止", for: .normal)
+            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImageForSlide), userInfo: nil,  repeats: true)
+            backBtn.isEnabled = false
+            nextBtn.isEnabled = false
         }else {
+            scrollBtn.setTitle("再生", for: .normal)
             timer.invalidate()
             timer = nil
+            backBtn.isEnabled = true
+            nextBtn.isEnabled = true
         }
+    }
+    
+    @objc func changeImageForSlide() {
+        changeImage(flag: true)
     }
     
     @objc func changeImage(flag: Bool) {
