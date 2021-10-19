@@ -16,35 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-NA-BS6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="744"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-NA-BS6">
+                                <rect key="frame" x="0.0" y="60" width="414" height="715"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-tK-Ku8">
-                                <rect key="frame" x="24" y="795" width="41" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="backSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSl-5g-FVC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXo-GA-Bpc">
-                                <rect key="frame" x="352" y="795" width="41" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXo-GA-Bpc">
+                                <rect key="frame" x="353" y="806" width="41" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1Au-k4-2mJ"/>
+                                    <constraint firstAttribute="width" constant="41" id="fNg-2b-Dgk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1I-Rf-y6v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnA-Ap-orT">
-                                <rect key="frame" x="187" y="795" width="41" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-tK-Ku8">
+                                <rect key="frame" x="20" y="806" width="41" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ger-o5-8el"/>
+                                    <constraint firstAttribute="width" constant="41" id="u7y-eI-dqY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSl-5g-FVC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnA-Ap-orT">
+                                <rect key="frame" x="187" y="806" width="41" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1lF-eg-zSF"/>
+                                    <constraint firstAttribute="width" constant="41" id="Qrv-eL-JJ4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
@@ -54,6 +62,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OnA-Ap-orT" secondAttribute="bottom" constant="20" id="04g-RP-mUo"/>
+                            <constraint firstItem="iXo-GA-Bpc" firstAttribute="top" secondItem="Jlk-NA-BS6" secondAttribute="bottom" constant="31" id="3V8-he-ZNY"/>
+                            <constraint firstItem="l3a-tK-Ku8" firstAttribute="top" secondItem="Jlk-NA-BS6" secondAttribute="bottom" constant="31" id="4ma-fx-gf0"/>
+                            <constraint firstItem="l3a-tK-Ku8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4nd-cF-QeB"/>
+                            <constraint firstItem="Jlk-NA-BS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="CfP-sj-TKP"/>
+                            <constraint firstItem="Jlk-NA-BS6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N8E-jy-7zT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l3a-tK-Ku8" secondAttribute="bottom" constant="20" id="Pjf-Ty-JQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iXo-GA-Bpc" secondAttribute="trailing" constant="20" id="Pke-Ib-45h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iXo-GA-Bpc" secondAttribute="bottom" constant="20" id="WDU-PV-L0v"/>
+                            <constraint firstItem="OnA-Ap-orT" firstAttribute="top" secondItem="Jlk-NA-BS6" secondAttribute="bottom" constant="31" id="WWc-rg-XVh"/>
+                            <constraint firstItem="iXo-GA-Bpc" firstAttribute="top" secondItem="Jlk-NA-BS6" secondAttribute="bottom" constant="31" id="bgs-ge-4FQ"/>
+                            <constraint firstItem="Jlk-NA-BS6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hBN-GJ-yeG"/>
+                            <constraint firstItem="OnA-Ap-orT" firstAttribute="leading" secondItem="l3a-tK-Ku8" secondAttribute="trailing" constant="126" id="l0G-wt-q1U"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="backBtn" destination="l3a-tK-Ku8" id="4oO-HW-oQL"/>
@@ -65,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.086956521739133" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-27.536231884057973" y="137.94642857142856"/>
         </scene>
         <!--imageViewControl-->
         <scene sceneID="P6w-by-VSh">
@@ -75,9 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-sX-UYZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="908"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-sX-UYZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLH-9d-wAk">
                                 <rect key="frame" x="188" y="831" width="41" height="36"/>
@@ -88,9 +110,12 @@
                                     <segue destination="eIR-S7-OBH" kind="unwind" unwindAction="unwind:" id="jFU-S9-vQB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNE-Hp-AXc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNE-Hp-AXc">
                                 <rect key="frame" x="187" y="772" width="41" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6JS-84-xIb"/>
+                                    <constraint firstAttribute="width" constant="41" id="ake-dt-JUW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -100,6 +125,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MRt-mJ-J6P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PNE-Hp-AXc" firstAttribute="leading" secondItem="MRt-mJ-J6P" secondAttribute="leading" constant="187" id="6SS-Ea-9d2"/>
+                            <constraint firstItem="MpA-sX-UYZ" firstAttribute="leading" secondItem="MRt-mJ-J6P" secondAttribute="leading" id="9CB-3B-IYc"/>
+                            <constraint firstItem="PNE-Hp-AXc" firstAttribute="bottom" secondItem="MRt-mJ-J6P" secondAttribute="bottom" id="Ap5-Tg-4zO"/>
+                            <constraint firstItem="MpA-sX-UYZ" firstAttribute="trailing" secondItem="MRt-mJ-J6P" secondAttribute="trailing" id="AvJ-si-sHg"/>
+                            <constraint firstItem="MpA-sX-UYZ" firstAttribute="top" secondItem="MRt-mJ-J6P" secondAttribute="top" id="Faw-cw-qTC"/>
+                            <constraint firstAttribute="bottom" secondItem="MpA-sX-UYZ" secondAttribute="bottom" id="xin-XS-qii"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BAo-M9-0No"/>
                     <connections>

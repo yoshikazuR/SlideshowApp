@@ -36,10 +36,6 @@ class ViewController: UIViewController {
         if (segue.identifier == "imageViewControl") {
             imageViewController.index = imageArray[nowIndex]
             scrollBtn.setTitle("再生", for: .normal)
-            timer.invalidate()
-            timer = nil
-            backBtn.isEnabled = true
-            nextBtn.isEnabled = true
         }
     }
 
@@ -87,6 +83,13 @@ class ViewController: UIViewController {
     @objc func imageCliecked(){
         print("Tapped on Image")
         self.performSegue(withIdentifier: "imageViewControl", sender: self)
+        if timer != nil {
+            scrollBtn.setTitle("再生", for: .normal)
+            timer.invalidate()
+            timer = nil
+            backBtn.isEnabled = true
+            nextBtn.isEnabled = true
+        }
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

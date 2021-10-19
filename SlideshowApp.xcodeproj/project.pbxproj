@@ -14,6 +14,9 @@
 		625205D1271CF655002C345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625205D0271CF655002C345D /* Assets.xcassets */; };
 		625205D4271CF655002C345D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625205D2271CF655002C345D /* LaunchScreen.storyboard */; };
 		625205DE271D0A3D002C345D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625205DD271D0A3D002C345D /* ImageViewController.swift */; };
+		62D292D3271EADC1004EAC79 /* sample1.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D292D0271EADC1004EAC79 /* sample1.png */; };
+		62D292D4271EADC1004EAC79 /* sample2.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D292D1271EADC1004EAC79 /* sample2.png */; };
+		62D292D5271EADC1004EAC79 /* sample3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D292D2271EADC1004EAC79 /* sample3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		625205D3271CF655002C345D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		625205D5271CF655002C345D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		625205DD271D0A3D002C345D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		62D292D0271EADC1004EAC79 /* sample1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample1.png; sourceTree = "<group>"; };
+		62D292D1271EADC1004EAC79 /* sample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample2.png; sourceTree = "<group>"; };
+		62D292D2271EADC1004EAC79 /* sample3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				625205DD271D0A3D002C345D /* ImageViewController.swift */,
 				625205CD271CF653002C345D /* Main.storyboard */,
 				625205D0271CF655002C345D /* Assets.xcassets */,
+				62D292D0271EADC1004EAC79 /* sample1.png */,
+				62D292D1271EADC1004EAC79 /* sample2.png */,
+				62D292D2271EADC1004EAC79 /* sample3.png */,
 				625205D2271CF655002C345D /* LaunchScreen.storyboard */,
 				625205D5271CF655002C345D /* Info.plist */,
 			);
@@ -128,8 +137,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				625205D4271CF655002C345D /* LaunchScreen.storyboard in Resources */,
+				62D292D3271EADC1004EAC79 /* sample1.png in Resources */,
+				62D292D4271EADC1004EAC79 /* sample2.png in Resources */,
 				625205D1271CF655002C345D /* Assets.xcassets in Resources */,
 				625205CF271CF653002C345D /* Main.storyboard in Resources */,
+				62D292D5271EADC1004EAC79 /* sample3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
